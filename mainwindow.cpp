@@ -276,17 +276,17 @@ void MainWindow::openFile()
             node.lb=label;
             //需要加上判断，若为第一种方案，为下面的选择,每个初始生成的Label都为背景色，这样才看不出来。
             switch(controll_colorscheme){
-            case 1:
+           /* case 1:
                 label->setStyleSheet("color:#000000;""font:bold;");
                 break;
-            //第二种方案
+            //第二种方案*/
             case 2:
             label->setStyleSheet("color:#;""font:bold;");
-                break;
+            /*    break;
             //第三种方案
             case 3:
             label->setStyleSheet("color:ffe0e0;""font-blod;");
-                break;
+                break;*/
             }
             QFont *font=new QFont("Courier",node.times*10);//新建一个与当前单词的频率所对应的font
             label->setFont(*font);//设置字体
